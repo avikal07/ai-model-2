@@ -16,5 +16,15 @@ def get_financial_recommendations(user_data):
     :return: AI-generated recommendation string.
     """
     prompt = f"Analyze the following financial data and suggest a plan: {user_data}"
-    response = genai.generate_text(prompt)
-    return response.text
+    
+    # Create a Gemini model instance
+    model = genai.GenerativeModel("gemini-pro")
+    
+    # Generate the content
+    response = model.generate_content(prompt)
+    
+    # Check if the response has content
+    if response and hasattr(response, "text"):
+        return response.text
+    else:
+        return "No recommendations generated."
