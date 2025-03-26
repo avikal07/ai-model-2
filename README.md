@@ -8,7 +8,7 @@ This project is a **Financial Assistant AI Model** that offers personalized fina
 
 The model leverages **Generative AI** to provide **exact numerical recommendations** to optimize financial planning.
 
----
+
 
 ## 🚀 Project Overview
 - **Frontend:** Built using **Node.js (npm)** for a responsive user interface.  
@@ -20,7 +20,7 @@ The model leverages **Generative AI** to provide **exact numerical recommendatio
   - 📡 **Vertex AI** – Model training and deployment  
   - ☁️ **Google IDX** – Cloud-based development and testing  
 
----
+
 
 ## 🎯 Key Features
 ✅ Easy-to-use interface for collecting user inputs  
@@ -28,7 +28,7 @@ The model leverages **Generative AI** to provide **exact numerical recommendatio
 ✅ Interactive data visualization using Tkinter  
 ✅ Google tool integration for superior AI predictions  
 
----
+
 
 ## 📚 Technologies Used
 - **Frontend:** Node.js, HTML, CSS, JavaScript  
@@ -36,21 +36,21 @@ The model leverages **Generative AI** to provide **exact numerical recommendatio
 - **GUI Interface:** Tkinter  
 - **AI Tools:** Gemini APIs, Vertex AI, Google IDX  
 
----
+
 
 ## 📊 Data Visualization & AI Integration
 The AI model analyzes user data (annual income, debts, etc.) and suggests optimal financial strategies.  
 Gemini APIs and Vertex AI improve the model’s predictive accuracy.  
 Tkinter displays results dynamically with interactive charts and tables.
 
----
+
 
 ## 🛠️ Upcoming Enhancements
 ✅ Add advanced investment recommendations  
 ✅ Integrate additional financial APIs for real-time data  
 ✅ Optimize AI model performance for faster predictions  
 
----
+
 
 ## 🤝 Contributing
 We welcome contributions! Follow these steps:  
