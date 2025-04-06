@@ -9,7 +9,6 @@ SECRET_KEY = 'django-insecure-hm+xg0y90b&^t36@n+(-6i)+1j)hzc&kd^h97$1j!(w4o+xwtz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 ALLOWED_HOSTS = ['ai-model-1-96bk.onrender.com', 'localhost', '127.0.0.1']
 
 # CORS Settings
@@ -42,7 +41,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'backend.urls'
+# ✅ Updated line to point to the correct project name
+ROOT_URLCONF = 'ai_model.urls'
 
 TEMPLATES = [
     {
@@ -60,7 +60,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'backend.wsgi.application'
+WSGI_APPLICATION = 'ai_model.wsgi.application'
 
 # Database
 DATABASES = {
