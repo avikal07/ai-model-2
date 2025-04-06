@@ -17,3 +17,9 @@ google-generativeai
 python-dotenv
 google-cloud-aiplatform
 gunicorn
+google-cloud-aiplatform
+grpcio
+protobuf
+google-api-core
+googleapis-common-protos
+google-cloud-core
