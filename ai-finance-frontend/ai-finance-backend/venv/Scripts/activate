@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\avika\desktop\ai-model\ai-finance-frontend\ai-finance-backend\venv"
+VIRTUAL_ENV="C:\Users\avika\Desktop\ai-model\ai-finance-frontend\ai-finance-backend\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -24,20 +24,40 @@ const Dashboard = () => {
     setter(value ? formatIndianCurrency(value) : "");
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const rawSalary = parseInt(salary.replace(/,/g, ""), 10);
-      const rawDebt = parseInt(debt.replace(/,/g, ""), 10) || 0;
-      const rawInterestRate = parseFloat(interestRate) || 0;
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const rawSalary = parseInt(salary.replace(/,/g, ""), 10);
+  //     const rawDebt = parseInt(debt.replace(/,/g, ""), 10) || 0;
+  //     const rawInterestRate = parseFloat(interestRate) || 0;
 
-      console.log("Sending API Request:", { salary: rawSalary, debt: rawDebt, interestRate: rawInterestRate });
+  //     console.log("Sending API Request:", { salary: rawSalary, debt: rawDebt, interestRate: rawInterestRate });
 
-      const response = await axios.post("http://127.0.0.1:8000/api/recommend/", {
-        salary: rawSalary,
-        debt: rawDebt,
-        interest_rate: rawInterestRate,
-      });
+  //     const response = await axios.post("http://127.0.0.1:8000/api/recommend/", {
+  //       salary: rawSalary,
+  //       debt: rawDebt,
+  //       interest_rate: rawInterestRate,
+  //     });
+
+
+  const API_BASE_URL = process.env.REACT_APP_API_URL || "http://127.0.0.1:8000";
+
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+          const rawSalary = parseInt(salary.replace(/,/g, ""), 10);
+          const rawDebt = parseInt(debt.replace(/,/g, ""), 10) || 0;
+          const rawInterestRate = parseFloat(interestRate) || 0;
+        
+          const response = await axios.post(`${API_BASE_URL}/api/recommend/`, {
+            salary: rawSalary,
+            debt: rawDebt,
+            interest_rate: rawInterestRate,
+          });
+
+
+  
+
 
       console.log("API Response:", response.data);
 

@@ -9,7 +9,7 @@ SECRET_KEY = 'django-insecure-hm+xg0y90b&^t36@n+(-6i)+1j)hzc&kd^h97$1j!(w4o+xwtz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "ai-model-1-96bk.onrender.com"]
 
 # CORS Settings
 CORS_ALLOW_ALL_ORIGINS = True  # Allows frontend requests
