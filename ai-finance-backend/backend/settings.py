@@ -41,7 +41,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# ✅ Correct project name (NOT ai_model)
+# Correct project name (NOT ai_model)
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
@@ -60,7 +60,7 @@ TEMPLATES = [
     },
 ]
 
-# ✅ Correct WSGI app name
+# Correct WSGI app name
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
