@@ -109,6 +109,17 @@ CORS_ALLOW_HEADERS = ["*"]
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 # import os
 # from pathlib import Path
 # import dj_database_url
